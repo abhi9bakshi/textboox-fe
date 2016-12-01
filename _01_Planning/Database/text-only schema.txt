@@ -1,0 +1,30 @@
+#Textbook
+Because a picture is not worth
+a thousand words...
+__________________________________
+Users Table 
+	-> Username
+	-> Password(SHA-256)
+	-> Creation_Time
+	-> Last_Acccess_Time
+
+Post 
+	-> content
+	-> creation_date
+	-> likes_count
+	-> comments_count
+
+Comment 
+	-> content
+	-> creation_date
+	-> likes_count
+__________________________________
+
+User -> has_many -> Posts
+
+Post -> has_many -> Comments
+
+Post -> has_many -> Likes
+
+Comment -> has_many -> Likes
+__________________________________

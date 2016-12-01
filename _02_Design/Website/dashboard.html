@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Textbook - Dashboard</title>
+<script src="js/jquery-3.1.1.min.js"></script>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header class="navbar">
+  	<h2>textbook</h2>
+    <div id="minilogo">
+    </div>
+    <div class="nav_options">
+    	<button>Profile</button>
+        <button>Logout</button>
+    </div>
+  </header>
+ 
+  <section class="wall">
+  	 <section class="status">
+  	<form id="statusform">
+        <textarea rows="4" cols="50" name="status" form="statusform" placeholder="What's on your mind?"></textarea><br>
+    	<input type="submit" value="Post">
+    </form>
+  	</section>
+  
+  	<p>Let's follow some people to see what's up with them.</p>
+  	<article id="wall_partial">
+    	<p><strong>Sujit25</strong> says:
+   	    <h3>Today is sunday so tomorrow's gonna be a monday</h3>
+        <p><em>23 minutes ago</em></p>
+        <p>
+        <button>¯\_(ツ)_/¯</button>
+        <span> 23 ¯\_(ツ)_/¯</span>
+        <span> 12 comments</span>
+        </p>
+        <article id="comment_partial">
+        	<p>Abhinav:				10 minutes ago</p>
+        	<p>Ek din aur ruk jaa... tuesday bhi aa jayega</p>
+            <p>
+            <button>¯\_(ツ)_/¯</button>
+	        <span> 5 ¯\_(ツ)_/¯</span>
+            </p>
+        </article> 
+    </article>
+  </section>
+  
+  <aside class="follow">
+  	<p>Recently active users</p>
+  	<div id="follow_partial">
+    	<p>Abhinav</p>
+        <p>Active: 3 minutes ago</p>
+        <button id="follow">Follow</button>
+    </div>
+  </aside>
+    
+    <script>
+		$(document).ready(function(e) {
+            alert("working!");
+        });
+	</script>
+</body>
+</html>

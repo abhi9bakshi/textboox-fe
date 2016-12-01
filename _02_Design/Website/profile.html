@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Textbook - Profile</title>
+<script src="js/jquery-3.1.1.min.js"></script>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header class="navbar">
+  	<h2>textbook</h2>
+    <div id="minilogo">
+    </div>
+    <div class="nav_options">
+    	<button>Wall</button>
+        <button>Logout</button>
+    </div>
+  </header>
+  <section class="profile">
+  	<div class="left_profile">
+  	<h2>User Profile</h2>
+	<div class="picture">
+    	<button>Edit</button>
+    </div>
+    </div>
+    
+    <div class="right_profile">
+    <div class="account_info">
+    	<p>Username  :  
+        <input type="text" placeholder="Sujit25" disabled></p>
+        <p>Email     :        
+        <input type="text" placeholder="technosujit25@gmail.com" disabled></p>
+        <form>
+        <p id="password">Password:</p>
+        <input type="password" placeholder="Old password" required><br>
+        <input type="password" placeholder="New password" required><br>
+        <input type="submit" value="Update">
+        </form>
+	</div>
+    </div>
+  </section>
+
+	<aside id="go_back">
+    	<button>Back</button>
+    </aside>    
+    
+    
+    <script>
+		$(document).ready(function(e) {
+            alert("working!");
+        });
+	</script>
+</body>
+</html>
